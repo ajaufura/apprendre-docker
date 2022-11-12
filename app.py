@@ -18,8 +18,8 @@ def hello():
     html = "<h3>Bonjour {nom}!</h3>" \
            "<b>Hostname:</b> {hostname}<br/>" \
            "<b>Visites:</b> {visites} <br/>" \
-           "<p>Abonne toi!</p>"
-    return html.format(nom=os.getenv("NOM", "youtube"), hostname=socket.gethostname(), visites=visites)
+           "<p>Bravo !!!!</p>"
+    return html.format(nom=os.getenv("NOM", "bofffffff"), hostname=socket.gethostname(), visites=visites)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)

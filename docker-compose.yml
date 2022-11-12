@@ -1,0 +1,20 @@
+version: "3"
+services:
+  python-app:
+    image: python-app
+    depends_on:
+      - redis
+    ports:
+      - "90:80"
+    networks:
+      - python-network
+    environment:
+      - NOM=abdus
+  
+  redis:
+    image: redis
+    networks:
+      - python-network
+  
+networks:
+  python-network:
